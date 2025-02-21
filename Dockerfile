@@ -13,9 +13,6 @@ RUN npm install
 # Copy the rest of the application files
 COPY . .
 
-# Copy the environment file
-COPY .env .env
-
 # Generate Prisma Client (Fixes your error)
 RUN npx prisma generate
 
